@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: rgb(224, 31, 31);
+  background-color: rgb(235, 11, 11);
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  text-align: justify;
+}
+main {
+  width: 655px;
+  margin: 0 auto;
+  background: rgb(12, 12, 12);
+  padding: 50px 40px 60px 40px;
+}
+.maintext {
+  background: red;
+  padding: 20px 10px;
+  color: rgb(66, 60, 60);
+}
+.wrapdiv {
+  display: flex;
+}
+.mainimage {
+  background-color: #0c0a0a00;
+  /*background-size: contain;
+  height: 300px;
+  margin:auto;
+  width:400px;*/
+}
+span {
+  margin: 0 7px;
+}
+
+h2 {
+  text-transform: uppercase;
+  border-bottom: solid 2px rgb(78, 76, 76);
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+}
+ul {
+  list-style-image: url("");
+}
+li {
+  font-size: 1.4em;
+}
+img {
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+}
+blockquote {
+  border: 2px solid rgb(211, 9, 43);
+  padding: 10px;
+}
+
+.heart-pulse {
+  animation: pulse 2s infinite;
+  display: inline-block;
+}
+@keyframes pulse {
+  0% {
+    /* starts small */
+    transform: scale(0.5);
+  }
+  50% {
+    /* halfway point - gets bigger */
+    transform: scale(1);
+  }
+  100% {
+    /* end - goes back to starting size */
+    transform: scale(0.5);
+  }
+}
+
+.heart-falling {
+  position: absolute;
+  animation: falling 2s infinite linear;
+}
+
+.heart-falling:nth-of-type(1) {
+  bottom: 1000px;
+  left: 50%;
+}
+.heart-falling:nth-of-type(2) {
+  bottom: 1000px;
+  left: 20%;
+}
+.heart-falling:nth-of-type(3) {
+  bottom: 1000px;
+  left: 30%;
+}
+.heart-falling:nth-of-type(4) {
+  bottom: 1000px;
+  left: 50%;
+}
+.heart-falling:nth-of-type(5) {
+  bottom: 1000px;
+  left: 20%;
+}
+.heart-falling:nth-of-type(6) {
+  bottom: 500px;
+  left: 30%;
+}
+
+@keyframes falling {
+  0% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: -25px;
+    transform: rotate(-360deg);
+  }
+}
